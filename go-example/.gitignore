@@ -1,0 +1,42 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of `go build` and `go install`
+/bin/
+/build/
+/out/
+
+# Dependency directories (remove the comment if using vendoring)
+/vendor/
+
+# Go workspace file
+*.code-workspace
+
+# Go coverage and profiling
+*.coverprofile
+*.prof
+
+# Editor / IDE files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Node.js / front-end (if present)
+node_modules/
+dist/
