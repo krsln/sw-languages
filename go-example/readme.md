@@ -25,4 +25,52 @@ go get <package_name> # equivalent to `npm install <package_name>`
 go run .
 go run main.go
 
-``` 
+```
+
+## Standard Layout
+
+https://github.com/golang-standards/project-layout
+
+```text
+myproject/
+├── cmd/
+│   └── myapp/
+│       └── main.go
+├── internal/
+│   └── app/
+│       └── service.go
+├── pkg/
+│   └── utils/
+│       └── helpers.go
+├── api/
+│   └── api.proto
+├── configs/
+│   └── config.yaml
+├── scripts/
+│   └── migrate.sh
+├── deployments/
+│   └── docker/
+│       └── Dockerfile
+├── test/
+│   └── integration/
+├── go.mod
+└── README.md
+
+myproject/
+├── cmd/                    # Main applications (entry points)
+│   └── myapp/             # One folder per executable
+│       └── main.go        # Main package with func main()
+├── internal/              # Private code (restricted to this project)
+│   ├── api/               # API handlers, routes, or controllers
+│   ├── config/            # Configuration loading and structs
+│   └── models/            # Data models or business logic
+├── pkg/                   # Reusable libraries (shareable across projects)
+│   └── mylib/             # Example library code
+├── go.mod                 # Module definition
+├── go.sum                 # Dependency checksums
+├── README.md              # Project documentation
+├── LICENSE                # License file (e.g., MIT, Apache)
+├── Makefile               # Build automation (optional)
+├── tests/                 # Additional test files or test data
+└── scripts/               # Build, deploy, or utility scripts
+```
