@@ -1,0 +1,14 @@
+# Rust / Cargo
+target/
+**/*.rs.bk
+**/*.rs.old
+
+# Cargo lock file (optional for libraries, usually keep for binaries)
+# Cargo.lock
+
+# IDE / Editor
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
