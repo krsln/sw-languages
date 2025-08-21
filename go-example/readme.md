@@ -25,6 +25,8 @@ go get <package_name> # equivalent to `npm install <package_name>`
 go run .
 go run main.go
 
+go build -o main.exe
+
 ```
 
 ## Standard Layout
@@ -74,3 +76,7 @@ myproject/
 ├── tests/                 # Additional test files or test data
 └── scripts/               # Build, deploy, or utility scripts
 ```
+
+## References
+
+https://github.com/BekBrace/Go_Course_2024  
