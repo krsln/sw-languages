@@ -7,6 +7,10 @@ fn main() {
 
     println!("Hello, 🦀 from CARGO!");
 
+    tutorials();
+}
+
+fn tutorials() {
     tutorials::data_types::primitive_data_types();
     tutorials::data_types::compound_data_types();
 
