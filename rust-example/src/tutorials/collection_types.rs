@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-pub(crate) fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Collection Types [Vectors UTF8 Hashmaps]");
@@ -56,7 +56,7 @@ pub(crate) fn main() {
     let team_name = String::from("Blue");
     let score = scores.get(&team_name).copied().unwrap_or(0);
     println!("The score is {}", score);
-    
+
     for (key, value) in &scores {
         println!("{}: {}", key, value);
     }

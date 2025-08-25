@@ -3,7 +3,7 @@
 // You can declare a constant here with a type annotation
 const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 
-pub fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Constants");

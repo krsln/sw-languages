@@ -2,7 +2,7 @@
 // 1- Conditions [If-Else]
 // 2- Repeating Actions [Loops]
 
-pub(crate) fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Control Flows");

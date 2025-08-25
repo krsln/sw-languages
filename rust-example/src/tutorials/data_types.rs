@@ -5,6 +5,11 @@ fn set_title(title: &str) {
     println!("==================================================");
 }
 
+pub fn run() {
+    primitive_data_types();
+    compound_data_types();
+}
+
 // ==================================================
 // Primitive Data Types
 // int float bool char
@@ -99,7 +104,7 @@ pub fn compound_data_types() {
     stone_cold.push_str("Yeah!");
     println!("Stone Cold Says: {}", stone_cold);
     // B- &str (String Slice)
-    let string :String = String::from("Hello, World!");
+    let string: String = String::from("Hello, World!");
     let slice: &str = &string[0..5];
     println!("Slice Value: {}", slice);
 }

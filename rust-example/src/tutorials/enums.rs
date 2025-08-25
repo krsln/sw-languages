@@ -1,4 +1,4 @@
-pub fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Enums ");

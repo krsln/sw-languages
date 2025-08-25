@@ -4,7 +4,7 @@
 // kebab case: hello-world
 // snake case: hello_world
 
-pub fn functions() {
+pub fn run() {
     hello_world();
     tell_height(186);
     human_id("Joel", 52, 182.3);

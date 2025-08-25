@@ -1,10 +1,12 @@
-pub(crate) mod constants;
-pub(crate) mod data_types;
-pub(crate) mod functions;
-pub(crate) mod ownership;
-pub(crate) mod shadowing;
-pub(crate) mod control_flows;
-pub(crate) mod structs;
-pub(crate) mod enums;
-pub(crate) mod error_handling;
-pub(crate) mod collection_types;
+#![allow(unused)]
+
+pub mod collection_types;
+pub mod constants;
+pub mod control_flows;
+pub mod data_types;
+pub mod enums;
+pub mod error_handling;
+pub mod functions;
+pub mod ownership;
+pub mod shadowing;
+pub mod structs;

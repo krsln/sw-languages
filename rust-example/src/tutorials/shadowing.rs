@@ -1,7 +1,6 @@
-// Shadowing
 // Shadowing is not the same as marking a variable as mutable.
 
-pub fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Shadowing");

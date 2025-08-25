@@ -32,7 +32,7 @@ fn divide_result(numerator: f64, denominator: f64) -> Result<f64, String> {
 }
 
 
-pub(crate) fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Error Handling ");

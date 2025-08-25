@@ -6,6 +6,13 @@ fn set_title(title: &str) {
     println!("==================================================");
 }
 
+pub fn run() {
+    ownership();
+    referencing();
+    mutable_immutable_references();
+    var_mutability();
+}
+
 // Ownership
 //----------------
 // C, C++ -> Memory Management Control Issue

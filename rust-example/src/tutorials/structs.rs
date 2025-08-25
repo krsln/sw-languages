@@ -1,6 +1,6 @@
 // Structs are used to name and package related values similar to tuples.
 
-pub fn main() {
+pub fn run() {
     println!();
     println!("==================================================");
     println!("Structs ");
