@@ -3,6 +3,11 @@
 https://www.rust-lang.org/tools/install  
 https://doc.rust-lang.org/cargo/getting-started/installation.html
 
+- Speed
+- Safety
+- Concurrency
+- Potability
+
 ## Install Rust and Cargo
 
 ```shell
@@ -17,6 +22,8 @@ source "$HOME/.cargo/env.fish"  # For fish
 source $"($nu.home-path)/.cargo/env.nu"  # For nushell
 
 # ---------
+rustup --version
+#rustup 1.28.2 (e4f3ad6f8 2025-04-28)
 rustc --version
 # rustc 1.89.0 (29483883e 2025-08-04)
 cargo --version
@@ -24,6 +31,49 @@ cargo --version
 
 cargo new rust-example
 cd rust-example
-#cargo build
+# or
+cargo init # 
+# cargo build
 cargo run
+```
+
+# Recommended Project Structure
+```text
+my-rust-app/
+├── Cargo.toml
+├── src/
+│   ├── main.rs          # Entry point (for binaries)
+│   ├── lib.rs           # For shared logic (if applicable)
+│   ├── bin/             # Optional: additional binaries
+│   │   └── helper.rs
+│   ├── models/          # Data structures, domain models
+│   │   ├── mod.rs
+│   │   └── user.rs
+│   ├── services/        # Business logic, use cases
+│   │   ├── mod.rs
+│   │   └── auth.rs
+│   ├── routes/          # Web routes (if web app)
+│   │   ├── mod.rs
+│   │   └── user_routes.rs
+│   ├── handlers/        # Request handlers (web apps)
+│   │   ├── mod.rs
+│   │   └── user_handler.rs
+│   ├── config/          # Configuration handling
+│   │   ├── mod.rs
+│   │   └── env.rs
+│   ├── utils/           # Helper functions, macros
+│   │   ├── mod.rs
+│   │   └── logging.rs
+│   └── db/              # Database access, ORM models, migrations
+│       ├── mod.rs
+│       └── schema.rs
+├── tests/               # Integration and module tests
+│   ├── integration_test.rs
+│   └── unit_test.rs
+├── examples/            # Example binaries
+│   └── demo.rs
+├── migrations/          # Database migrations (if using SQLx, Diesel, etc.)
+├── .env                 # Environment variables (gitignored)
+├── .gitignore
+└── README.md
 ```
